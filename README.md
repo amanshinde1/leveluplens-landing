@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# 🚀 LevelUpLens
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Know why you might get rejected — before you apply.
 
-## Available Scripts
+Most job seekers apply blindly.
 
-In the project directory, you can run:
+LevelUpLens analyzes job descriptions and shows what the role actually expects — so you can decide if applying makes sense before you waste time.
 
-### `npm start`
+> 💡 LevelUpLens gives insights — you decide where to apply.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📊 What You Get
 
-### `npm test`
+![Analysis](./public/assets/analysis.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- See how well you align with a role  
+- Identify missing skills instantly  
+- Understand expectations clearly  
+- Decide: apply or skip  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚙️ How It Works
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Flow](./public/assets/flow.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Upload your resume  
+2. Open any job on LinkedIn  
+3. Get instant insight  
+4. Decide whether to apply  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ❌ The Problem
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 200+ applications → only a few interviews  
+- Job descriptions are unclear  
+- Rejections happen without feedback  
+- You don’t know what you're missing  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Most people try to fix this by applying more.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+That’s not the solution.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ✅ The Shift
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Apply smarter — not more.
 
-### Code Splitting
+LevelUpLens helps you:
+- Understand what a job really expects  
+- Identify gaps before applying  
+- Avoid low-probability applications  
+- Save time and energy  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🔐 Privacy First
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Privacy](./public/assets/privacy.png)
 
-### Making a Progressive Web App
+- Your resume never leaves your browser  
+- No storage, no accounts required  
+- Only skills are extracted for analysis  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🚀 Get Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Install the Chrome extension  
+- Upload your resume once  
+- Analyze any job instantly  
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🔗 Project Components
 
-### `npm run build` fails to minify
+- 🔌 Chrome Extension:  
+- ⚙️ Backend API: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## ⚡ Tech Stack
+
+- Frontend: React + Chakra UI  
+- Backend: Django  
+- Extension: Chrome Extension (Manifest V3)  
+
+---
+
+## ⭐ Why LevelUpLens?
+
+Because applying blindly is the real problem.
+
+LevelUpLens helps you **make informed decisions before you apply** — not after you get rejected.

@@ -14,9 +14,15 @@ import {
 import { keyframes } from "@emotion/react";
 
 const float = keyframes`
-0% { transform: translate(-50%, -50%) }
-50% { transform: translate(-50%, -55%) }
-100% { transform: translate(-50%, -50%) }
+  0% { transform: translate(-50%, -50%) }
+  50% { transform: translate(-50%, -55%) }
+  100% { transform: translate(-50%, -50%) }
+`;
+
+const demoFloat = keyframes`
+  0% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-6px) scale(1.01); }
+  100% { transform: translateY(0px) scale(1); }
 `;
 
 const Navbar = () => (
@@ -32,7 +38,7 @@ const Navbar = () => (
         borderRadius="16px"
         fontWeight="500"
       >
-        Install LevelUpLens 
+        Install LevelUpLens
       </Button>
     </HStack>
   </Box>
@@ -63,12 +69,12 @@ function App() {
 
       <Navbar />
 
-      {/* HERO */}
+      {/* HERO - MAXIMUM CONVERSION */}
       <Container maxW="900px" py={24} position="relative" zIndex={10}>
         <VStack spacing={10} textAlign="center">
 
           <Heading fontSize={{ base: "4xl", md: "6xl" }} lineHeight="1.1">
-          Know Why You Might Get Rejected -
+            Know Why You Might Get Rejected -
             <Text
               as="span"
               display="block"
@@ -79,10 +85,18 @@ function App() {
             </Text>
           </Heading>
 
-          <Text fontSize="xl" color="gray.300" maxW="700px">
-          Most job seekers apply blindly.
+          <Text fontSize="lg" color="gray.400" mt={-4}>
+            Tired of seeing "Unfortunately..."? Know before you apply.
+          </Text>
 
-LevelUpLens breaks down job descriptions and reveals the skills and expectations behind the role — so you can decide if it's worth applying.
+          <Text fontSize="xl" color="gray.300" maxW="700px">
+            Most job seekers apply blindly.
+            LevelUpLens analyzes job descriptions and shows what the role actually expects — so you can decide if applying makes sense before you waste time.
+          </Text>
+
+          {/* 🔥 PERFECT SAFETY LINE */}
+          <Text fontSize="sm" color="gray.400" fontWeight="500">
+            LevelUpLens gives insights — you decide where to apply.
           </Text>
 
           <Button
@@ -96,11 +110,47 @@ LevelUpLens breaks down job descriptions and reveals the skills and expectations
             Install LevelUpLens Extension
           </Button>
 
-          <Text fontSize="sm" color="gray.400">
-            Free • No account required
-          </Text>
+          <VStack spacing={1} fontSize="sm" color="gray.400">
+            <Text>✓ Works directly on LinkedIn</Text>
+            <Text>✓ Your resume never leaves your browser</Text>
+            <Text>✓ Free • No account required</Text>
+          </VStack>
 
         </VStack>
+      </Container>
+
+      {/* PRODUCT DEMO VIDEO */}
+      <Container maxW="1000px" pb={24} position="relative" zIndex={10}>
+        <Box
+          position="absolute"
+          top="50%"
+          left="50%"
+          transform="translate(-50%, -50%)"
+          w="900px"
+          h="450px"
+          bg="radial-gradient(circle, rgba(168,85,247,0.35), transparent 70%)"
+          filter="blur(120px)"
+          zIndex={0}
+        />
+
+        <Box
+          position="relative"
+          borderRadius="24px"
+          overflow="hidden"
+          border="1px solid rgba(255,255,255,0.15)"
+          boxShadow="0 40px 120px rgba(0,0,0,0.6)"
+          animation={`${demoFloat} 6s ease-in-out infinite`}
+          transition="all 0.3s ease"
+          _hover={{
+            transform: "scale(1.02)",
+            boxShadow: "0 60px 140px rgba(0,0,0,0.7)"
+          }}
+          zIndex={1}
+        >
+          <video autoPlay muted loop playsInline style={{ width: "100%" }}>
+            <source src="/demo.mp4" type="video/mp4" />
+          </video>
+        </Box>
       </Container>
 
       {/* QUICK HOW IT WORKS */}
@@ -124,7 +174,7 @@ LevelUpLens breaks down job descriptions and reveals the skills and expectations
           <Box>
             <Heading size="md">3️⃣ Get Instant Insight</Heading>
             <Text mt={3} color="gray.400">
-              See matched skills, missing skills, and decide if the role is worth applying to.
+              Understand requirements and decide to apply or skip.
             </Text>
           </Box>
 
@@ -133,90 +183,47 @@ LevelUpLens breaks down job descriptions and reveals the skills and expectations
 
       {/* SYSTEM SECTION */}
       <Container maxW="1200px" pb={24} position="relative" zIndex={10}>
-
         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8}>
 
           {/* PROBLEM CARD */}
-          <Box
-            bg="rgba(255,255,255,0.04)"
-            border="1px solid rgba(255,255,255,0.15)"
-            borderRadius="20px"
-            p={8}
-            backdropFilter="blur(20px)"
-          >
+          <Box bg="rgba(255,255,255,0.04)" border="1px solid rgba(255,255,255,0.15)" borderRadius="20px" p={8} backdropFilter="blur(20px)">
             <VStack align="center" spacing={6} textAlign="center">
-
-              <Heading size="md">
-                Why Most Job Applications Go Nowhere
-              </Heading>
-
+              <Heading size="md">Why Most Job Applications Go Nowhere</Heading>
               <Text fontSize="lg">200+ applications</Text>
               <Text color="gray.400">↓</Text>
-
               <Text fontSize="lg">Only 4–6 interviews</Text>
               <Text color="gray.400">↓</Text>
-
               <Text fontSize="lg">95% rejection rate</Text>
-
               <Text pt={4} color="purple.300">
                 Applying to more jobs isn't the solution.
                 Applying to the right jobs is.
               </Text>
-
             </VStack>
           </Box>
 
           {/* HOW IT WORKS CARD */}
-          <Box
-            bg="rgba(255,255,255,0.04)"
-            border="1px solid rgba(255,255,255,0.15)"
-            borderRadius="20px"
-            p={8}
-            backdropFilter="blur(20px)"
-          >
+          <Box bg="rgba(255,255,255,0.04)" border="1px solid rgba(255,255,255,0.15)" borderRadius="20px" p={8} backdropFilter="blur(20px)">
             <VStack spacing={5} align="center" textAlign="center">
-
-              <Heading size="md">
-                How LevelUpLens Works
-              </Heading>
-
+              <Heading size="md">How LevelUpLens Works</Heading>
               <Text>Upload your resume</Text>
               <Text color="gray.400">↓</Text>
-
               <Text>Open a job on LinkedIn</Text>
               <Text color="gray.400">↓</Text>
-
               <Text>LevelUpLens analyzes the role instantly</Text>
               <Text color="gray.400">↓</Text>
-
-              <Text>See matched skills & gaps</Text>
+              <Text>See gaps & expectations</Text>
               <Text color="gray.400">↓</Text>
-
-              <Text fontWeight="600">Decide if it's worth applying</Text>
-
+              <Text fontWeight="600">Decide to apply or skip</Text>
             </VStack>
           </Box>
 
           {/* RESULT CARD */}
-          <Box
-            bg="rgba(255,255,255,0.05)"
-            border="1px solid rgba(255,255,255,0.15)"
-            borderRadius="20px"
-            p={8}
-            backdropFilter="blur(20px)"
-          >
+          <Box bg="rgba(255,255,255,0.05)" border="1px solid rgba(255,255,255,0.15)" borderRadius="20px" p={8} backdropFilter="blur(20px)">
             <VStack align="start" spacing={5}>
-
-              <Heading size="md">
-                Example Job Analysis
-              </Heading>
-
-              <Text fontWeight="500">
-
-              </Text>
+              <Heading size="md">Example Job Analysis</Heading>
 
               <Text fontSize="3xl" fontWeight="700" color="green.400">
-                78% Match Score
+                78% Alignment Score
               </Text>
 
               <Divider />
@@ -238,26 +245,21 @@ LevelUpLens breaks down job descriptions and reveals the skills and expectations
               </HStack>
 
               <Text color="gray.400" fontSize="sm">
-                You match most backend skills including Python and Django.
-                However Docker and AWS are also required for this role.
+                You match core backend skills, but this role also expects Docker and AWS.
               </Text>
-
             </VStack>
           </Box>
 
         </SimpleGrid>
-
       </Container>
 
       {/* TRUST SECTION */}
       <Container maxW="800px" pb={24} position="relative" zIndex={10}>
         <VStack spacing={8} textAlign="center">
-
           <Heading>Your resume stays private.</Heading>
-
           <Text color="gray.400" maxW="600px">
-            LevelUpLens only extracts the skills needed for matching.
-            Your resume file is never stored or saved.
+            LevelUpLens only extracts the skills needed for analysis.
+            Your resume is never stored or saved.
           </Text>
 
           <Button
@@ -270,7 +272,6 @@ LevelUpLens breaks down job descriptions and reveals the skills and expectations
           >
             Install LevelUpLens Extension
           </Button>
-
         </VStack>
       </Container>
 
@@ -278,14 +279,15 @@ LevelUpLens breaks down job descriptions and reveals the skills and expectations
       <Container maxW="800px" pb={24}>
         <VStack spacing={4} textAlign="center">
           <Text color="gray.400">
-            Early testers report clearer job decisions and less wasted applications.
+            Early testers report clearer decisions and fewer wasted applications.
           </Text>
         </VStack>
       </Container>
 
       {/* FOOTER */}
       <Box textAlign="center" py={10} color="gray.500">
-        LevelUpLens — Analyze job requirements before you apply
+        LevelUpLens v1.0 — Decide before you apply
+        <Text mt={2} fontSize="xs">Built for job seekers like you 🇮🇳</Text>
       </Box>
 
     </Box>

@@ -17,7 +17,7 @@ import { keyframes } from "@emotion/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from "@studio-freight/lenis";
+import Lenis from "lenis";
 
 gsap.registerPlugin(ScrollTrigger);
 

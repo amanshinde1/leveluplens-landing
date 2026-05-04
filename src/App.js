@@ -254,7 +254,12 @@ function App() {
   };
 
   const handleInstallClick = () => {
-    scrollToSection("trust");
+    const url = "https://chromewebstore.google.com/detail/leveluplens/mcjmcangddljhnmlcpnljeilbfjmbjbh";
+
+    const newTab = window.open(url, "_blank");
+    if (!newTab) {
+      window.location.href = url; // fallback
+    }
   };
 
   useEffect(() => {
@@ -1219,6 +1224,7 @@ function App() {
               _active={{
                 transform: "translateY(0px) scale(0.99)",
               }}
+              onClick={handleInstallClick}
             >
               Install LevelUpLens Extension
             </Button>
@@ -1245,7 +1251,7 @@ function App() {
           zIndex={10}
           borderTop="1px solid rgba(255,255,255,0.06)"
         >
-          LevelUpLens v1.0 — Decide before you apply
+          LevelUpLens v1.1 — Decide before you apply
           <Text mt={2} fontSize="xs">
             Built for job seekers like you 🇮🇳
           </Text>

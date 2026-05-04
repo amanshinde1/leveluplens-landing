@@ -1228,6 +1228,9 @@ function App() {
             >
               Install LevelUpLens Extension
             </Button>
+            <Text fontSize="xs" color="gray.500" mt={3}>
+              Works best on Chrome • More browsers coming soon
+            </Text>
           </VStack>
         </Container>
 

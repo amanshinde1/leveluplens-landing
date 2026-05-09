@@ -739,7 +739,7 @@ function App() {
               transform="translateY(14px)"
             >
               <Text>✓ Works directly on LinkedIn</Text>
-              <Text>✓ Your resume never leaves your browser</Text>
+              <Text>✓ We extract role-relevant skills and experience signals — not personal identity information.</Text>
               <Text>✓ Free • No account required</Text>
             </VStack>
           </VStack>

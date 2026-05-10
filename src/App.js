@@ -1168,7 +1168,7 @@ function App() {
             <Heading letterSpacing="-0.03em">Your resume stays private.</Heading>
             <Text color="gray.400" maxW="620px" lineHeight="1.85">
               LevelUpLens only extracts the skills needed for analysis.
-              Your resume is never stored or saved.
+              Your resume stays only in your browser during analysis—no storage involved.
             </Text>
 
             <HStack wrap="wrap" justify="center" spacing={3}>
